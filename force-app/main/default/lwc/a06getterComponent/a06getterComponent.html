@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Getter in LWC">
+    <div class="slds-var-p-around_small">
+    <div>
+    <lightning-input label="Title" type="text" value={title}
+    onchange={titleChanged}></lightning-input>
+    </div>
+    <div>
+    <lightning-input label="Message1" type="text" value={message1}
+    onchange={message1Changed}></lightning-input>
+    </div>
+    <div>
+    <lightning-input label="Message2" type="text" value={message2}
+    onchange={message2Changed}></lightning-input>
+    </div>
+    <div class="slds-var-p-top_small">
+    NOTE : {allMessage}
+    </div>
+    </div>
+    </lightning-card>
+    </template>
+    

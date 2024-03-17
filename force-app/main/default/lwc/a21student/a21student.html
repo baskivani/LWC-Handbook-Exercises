@@ -1,0 +1,36 @@
+<template>
+<template if:true={display}>
+<lightning-card title="Student App">
+<lightning-input
+type="text"
+label="Student Number"
+placeholder="Enter the student's number..."
+onblur={handleStudentNumber}
+></lightning-input>
+<lightning-input
+type="text"
+label="Student First Name"
+placeholder="Enter the student's first name..."
+onblur={handleFirstName}
+></lightning-input>
+<lightning-input
+type="text"
+label="Student Last Name"
+placeholder="Enter the student's last name..."
+onblur={handleLastName}
+></lightning-input>
+</lightning-card>
+ <lightning-button label="Search" onclick={searchHandler}></lightning-button>
+</template>
+<template if:false={display}>
+<lightning-card title='Student Detail'>
+<p>Student Number:<strong>{studentNumber}</strong></p>
+<c-student-detail first-name={StudentFirstName} last-name={StudentLastName}>
+</c-student-detail>
+<!-- to assign java script property
+from parent component we create
+attribute in html element and we assign
+the value -->
+</lightning-card>
+</template>
+</template>

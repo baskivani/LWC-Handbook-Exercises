@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Conditional Rendering" icon-name="action:approval">
+    <div>
+    <lightning-input type="checkbox" label="Show details"
+    onchange={handleChange}></lightning-input>
+    <template if:true={DetailsVisibility}>
+    <div class="slds-text-align_center ">
+    when details are uploaded, it'll be shown :) 
+    </div>
+    </template>
+    </div>
+    </lightning-card>
+    </template>

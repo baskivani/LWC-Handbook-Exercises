@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Sum with Getter in LWC">
+    <div class="slds-var-p-around_small">
+    <div>
+    <lightning-input label="Number1" type="text" value={number1}
+    onchange={number1Changed}></lightning-input>
+    </div>
+    <div>
+    <lightning-input label="Number2" type="text" value={number2}
+    onchange={number2Changed}></lightning-input>
+    </div>
+    <div class="slds-var-p-top_small">
+    {number1} + {number2} = {sumOfNumber}
+    </div>
+    </div>
+    </lightning-card>
+    </template>

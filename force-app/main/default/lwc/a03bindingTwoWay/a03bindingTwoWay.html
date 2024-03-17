@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="2. Two Way Binding">
+    <lightning-input label="First Name" value="Text here"
+    onchange={messageHandler1}></lightning-input>
+    {message1}
+    <lightning-input label="Last Name" value="Text here"
+    onchange={messageHandler2}></lightning-input>
+    {message2}
+    <hr>
+    <h3>Your Full Name is {message1} {message2}</h3>
+    </lightning-card>
+    </template>

@@ -1,0 +1,11 @@
+<template>
+    <lightning-card class="myfont">
+    <h1 style="background-color: #5B318C;" class="myTitle">Wise Quarter Courses</h1>
+    <template for:each={courses} for:item="crs">
+    <div key={crs.Id} class="mydiv">
+    Name : {crs.Name} <br>
+    Website : {crs.Website}
+    </div>
+    </template>
+    </lightning-card>
+    </template>

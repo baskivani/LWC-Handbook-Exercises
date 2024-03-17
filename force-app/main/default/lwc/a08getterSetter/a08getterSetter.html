@@ -1,0 +1,15 @@
+<template>
+<lightning-card title = "Getter Setter in LWC" icon-name="custom:custom11">
+<lightning-layout>
+<lightning-layout-item flexibility="auto" padding="around-small">
+<div class="padding-around:small">
+<lightning-input label="Whatever you write this box, it will be shown as an 
+upperCase format under the box" value={message} onchange={handleMessage}></lightning-input>
+</div>
+<div class="padding-around:small slds-m-top_small">
+<lightning-formatted-text value={outputMessage} ></lightning-formatted-text>
+</div>
+</lightning-layout-item>
+</lightning-layout>
+</lightning-card>
+</template>

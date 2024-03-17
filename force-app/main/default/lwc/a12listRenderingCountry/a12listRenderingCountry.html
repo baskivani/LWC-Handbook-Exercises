@@ -1,0 +1,12 @@
+<template>
+<lightning-card title="Render List With Iterator">
+<template iterator:item={students}>
+<div key={item.value.Id}>
+<div if:true={item.first}></div>
+{item.value.Name}, from 
+{item.value.Country}
+<div if:true={item.last}></div>
+</div>
+</template>
+</lightning-card>
+</template>

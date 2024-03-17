@@ -1,0 +1,28 @@
+<template>
+<template if:true={display}>
+<lightning-card title="Student">
+<div>
+<lightning-input label="First Name" value={firstName}
+onchange={firstNameHandler}></lightning-input>
+<lightning-input label="Last Name" value={lastName}
+onchange={lastNameHandler}></lightning-input>
+<lightning-input label="Student Number" value={studentNumber}
+onchange={studentNumberHandler}></lightning-input>
+<lightning-button label="Search" onclick={searchHandler}></lightning-button>
+</div>
+</lightning-card>
+</template>
+<template if:false={display}>
+<lightning-card title="Student Details">
+<div>
+<h1 style="font-weight: bolder;">{firstName} {lastName} ({studentNumber})</h1>
+<p>Phone : </p>
+<p>Email : </p>
+<p>Address : </p>
+<img
+src="https://us.123rf.com/450wm/pandavector/pandavector1705/pandavector170501741/77587996-
+avatar-of-a-man-with-orange-hair.avatar-and-face-single-icon-in-cartoon-style-rater,bitmapsymbol-stock-illustration..jpg">
+</div>
+</lightning-card>
+</template>
+</template>

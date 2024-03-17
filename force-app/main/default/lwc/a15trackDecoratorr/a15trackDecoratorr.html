@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Track Decorator">
+    <lightning-input
+    type="text"
+    label="Enter the name"
+    onchange={handleMemberName}>
+    </lightning-input>
+    <lightning-input
+    type="text"
+    label="Enter the age"
+    onchange={handleMemberAge}>
+    </lightning-input>
+    <h1>Member Name: {MemberInfo.name} </h1>
+    <h1>Member Age: {MemberInfo.age} </h1>
+    </lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<template>
+<lightning-card title="Render List With For Each" icon-name="action:new_note"
+style="color:rgb(185, 23, 23)">
+<ul>
+<template for:each={cities} for:item="citiname">
+<li key={citiname.Id}>
+<b style="color:rgb(72, 13, 211)">{citiname.Name}</b>
+</li>
+</template>
+</ul>
+</lightning-card>
+</template>
