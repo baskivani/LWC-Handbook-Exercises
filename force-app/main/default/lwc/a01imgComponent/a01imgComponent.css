@@ -5,5 +5,9 @@ div{
     font-size: xx-large;
     }
     .myClass{
-    font-style: italic;
+    font-style: italic bold;
+    font-size: 12;
+    text-align: center;
+    
     }
+   
