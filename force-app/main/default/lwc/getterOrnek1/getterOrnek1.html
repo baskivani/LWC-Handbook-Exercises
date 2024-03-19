@@ -1,0 +1,21 @@
+<template>
+    
+    <lightning-card> 
+
+        <lightning-input type="text" 
+                        label="Enter Your Name" 
+                        onchange={handleFirstName}>
+        </lightning-input>
+        <h1> Your first name is {firstName}</h1>
+
+        <lightning-input type="text" 
+        label="Enter Your First Name" 
+        onchange={handleLastName}>
+        </lightning-input>
+        
+<h1> Your last name is {lastName}</h1>
+
+<h1> Your full name is {fullName} </h1>
+
+    </lightning-card>
+</template>
